@@ -1,38 +1,112 @@
-.App {
+
+.bgimg{
+  width: 100%;
+  height: 50vh;
+}
+
+.homeJamLogo{
+  position: relative;
+  top: 2%;
+  left: -90%;
+}
+body {
+  background-image: url('images/bgimg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+
+}
+.container-navbar{
+  margin-top: 3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .container-main{
+  
+} */
+.logo{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  color: white;
+  right: -90%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title{
+  position: absolute;
+  width: 383px;
+  height: 96px;
+  left: 151px;
+  top: 246px;
+
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  /* identical to box height, or 120% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+.header-body{
+  position: absolute;
+  width: 611px;
+  height: 64px;
+  left: 151px;
+  top: 366px;
+
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+
+  color: #FFFFFF;
+
+  opacity: 0.6;
+}
+.circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  height: 208px;
+  line-height: 208px;
+  border-radius: 50%;
+  gap: 8px;
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
+  opacity: 0.2;
+  border: 2px solid #FFFFFF;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.circle-container{
+  display:flex;
+  position: absolute;
+  width: 1140px;
+  height: 267px;
+  left: 151px;
+  top: 621px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: right;
+  justify-content: space-between;
+  
 }
