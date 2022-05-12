@@ -1,19 +1,34 @@
 
-.bgimg{
-  width: 100%;
-  height: 50vh;
-}
-
 .homeJamLogo{
   position: relative;
   top: 2%;
   left: -90%;
 }
 body {
-  background-image: url('images/bgimg.png');
+  /* background: #0A0B1A; */
+  background: #010208;
+   width: 1440px;
+  height: 2079px; 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+.bg{
+  /* overflow: hidden; */
+  position: absolute;
+  width: 100%;
+  height: 862px;
+  left: 1px;
+  top: -2px;
+  z-index: -1;
+  background-image: url('images/bgimg.png'), linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
 .container{
@@ -29,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} 
 /* .container-main{
   
 } */
@@ -92,9 +107,11 @@ body {
   border-radius: 50%;
   gap: 8px;
   font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #FFFFFF;
-  opacity: 0.2;
-  border: 2px solid #FFFFFF;
+  opacity: 0.3;
+  border: 1px solid #FFFFFF;
   text-align: center;
 }
 
@@ -105,8 +122,220 @@ body {
   height: 267px;
   left: 151px;
   top: 621px;
+  /* position: relative; */
 
   align-items: right;
   justify-content: space-between;
+  
+}
+
+.innerImg{
+  height: 230px;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  ;
+}
+.innerDetails{
+  background: 
+  #111229;
+  height: 120px;
+  padding: 10px;
+  
+}
+.tag{
+  background-color: #E5C558;
+  width: fit-content;
+  padding: 4px; 
+}
+.name{
+  font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+.fcontainer{
+  display:inline-flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.main-card{
+  margin: 20px;
+  padding: 24px;
+}
+.body2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  left: 50px;
+  top: 984px;
+
+}
+.more-info{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+color: #0259EB;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.link{
+  display: flex;
+  align-items:flex-end;
+  
+}
+.link-section1{
+  display: flex;
+  align-items:flex-end;
+  /* padding: 1px; */
+}
+.ticket-logo{
+  margin-right: 0px !important;
+  margin-left: auto !important;
+}
+.header{
+  
+position: aboslute;
+width: 287px;
+height: 40px;
+left: 154px;
+top: 984px;
+
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.yellow-link{
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+/* line-height: 24px; */
+margin-right: 0px !important;
+margin-left: auto !important;
+
+color: #E5C558;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.title-bar{
+  display: flex;
+  align-items:center;
+  
+}
+.profile{
+  margin: 20px;
+  padding: 24px;
+}
+.dp{
+  
+  border-radius: 10px;
+}
+.review-card{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  /* left: 0%;
+  right: 2.17%;
+  top: 3.12%;
+  bottom: 0%; */
+  width: 360px;
+  height: 248px;
+
+  background: #0A0B1A;
+  border: 2px solid #E5AF56;;
+  border-radius: 16px;
+  overflow-wrap: break-word;
+}
+.review-text{
+display: flex;
+margin: 15px;
+align-self: center;
+align-items: center;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+opacity: 0.9;
+}
+.profile{
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 4px;
+
+}
+.namecon{
+  display: flex;
+  flex-direction: column;
+  
+}
+.profile-name{
+  margin:10.5px;
+  font-family: 'Quattrocento';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  display: flex;
+  
+}
+.city{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  color: #E5C558;
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
   
 }
