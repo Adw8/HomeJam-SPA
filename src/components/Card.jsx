@@ -7,7 +7,7 @@ const Card = (props) => {
     <>
     <div className='main-card'>
       <div className="innerImg">
-          <img src={props.image} alt = 'display-picture'></img>
+          <img src={props.image} alt = 'nice'></img>
       </div>
       <div className="innerDetails">
       <div className='tag'>{props.tag}</div>
