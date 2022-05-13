@@ -3,6 +3,8 @@ import './App.css';
 import homeJamLogo from './images/homeJamLogo.png';
 import {HiOutlineSearch} from 'react-icons/hi';
 import {FiShoppingBag} from 'react-icons/fi';
+import {BsSuitHeart} from 'react-icons/bs';
+import {BsFillCalendarCheckFill} from 'react-icons/bs';
 
 import Benny from './images/Benny.png';
 import Shilpa from './images/Shilpa.png';
@@ -14,6 +16,7 @@ import Afro from './images/Afro.png';
 
 import Card from './components/Card';
 import Review from './components/Review';
+import Circle from './components/Circle';
 
 function App() {
   return (
@@ -35,10 +38,11 @@ function App() {
         Live from their sofa to yours. Get closer to your favorite artists, and never miss out
       </div>
       <div class="circle-container">
-        <div class='circle' font = 'Nunito' color='white' >Label1</div>
-        <div class='circle' font = 'Nunito' color='white' >Label2</div>
-        <div class='circle' font = 'Nunito' color='white' >Label3</div>
-        <div class='circle' font = 'Nunito' color='white' >Label4</div>
+        <Circle icon = {BsSuitHeart} label = 'Label'value='0'/>
+        <Circle icon = {BsFillCalendarCheckFill} label = 'Label' value='0'/>
+        <Circle icon = {BsFillCalendarCheckFill} label = 'Label' value='0'/>
+        <Circle icon = {BsFillCalendarCheckFill} label = 'Label' value='0'/>
+        
       </div> 
    </div>
   <div className='body2'>
