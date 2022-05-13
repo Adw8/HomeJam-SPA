@@ -145,7 +145,8 @@ body {
 .tag{
   background-color: #E5C558;
   width: fit-content;
-  padding: 4px; 
+  padding: 2px; 
+  cursor: pointer;
 }
 .name{
   font-family: 'Libre Baskerville';
@@ -193,6 +194,7 @@ display: flex;
 align-items: center;
 
 color: #0259EB;
+cursor: pointer;
 
 
 /* Inside auto layout */
@@ -214,6 +216,7 @@ flex-grow: 0;
 .ticket-logo{
   margin-right: 0px !important;
   margin-left: auto !important;
+  cursor: pointer;
 }
 .header{
   
@@ -247,6 +250,7 @@ margin-right: 0px !important;
 margin-left: auto !important;
 
 color: #E5C558;
+cursor: pointer;
 
 
 /* Inside auto layout */
